@@ -1,0 +1,228 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="icon" href=" {% static 'img/logo.jpg' %} " type="image/jpg">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio Design</title>
+
+    <!-- Custome CSS link up -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#toggle-btn').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+    
+<!-- Navbar Start -->
+<nav class="navbar">
+    <a href="#" class="brand"><img class="logo-img" src="{% static 'img/logo.jpg' %}" alt="logo"></a>
+    <div class="toggle-btn" id="toggle-btn">
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="links-container">
+        <li class="links-item"><a href="#" class="link active">Home</a></li>
+        <li class="links-item"><a href="#about-section" class="link">About</a></li>
+        <li class="links-item"><a href="#project-section" class="link">Project</a></li>
+        <li class="links-item"><a href="#feature-section" class="link">Feature</a></li>
+        <li class="links-item"><a href="#contact-section" class="link">Contact</a></li>
+    </ul>
+</nav>
+<!-- Navbar End -->
+
+
+<!-- Home Section Start -->
+<section class="home">
+    <div class="hero-content">
+        <h1 class="hero-heading"><span class="highlight">hi, </span>i am fazle</h1>
+        <p class="profession">web developer</p>
+        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odit in laudantium suscipit blanditiis asperiores.</p>
+        <a href="#contact-section" class="btn">contact</a>
+    </div>
+    <img src="{% static 'img/amir.jpg' %}" alt="my_image" class="my_image">
+</section>
+<!-- Home Section End -->
+
+
+<!-- About Section Start -->
+<section class="about" id="about-section">
+    <h2 class="heading">about <span class="highlight">me</span></h2>
+    <p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <div class="seperator"></div>
+
+    <div class="about-me-container">
+        <div class="left-col">
+            <img src="{% static 'img/mohamad.jpg' %} " alt="" class="about-image">
+        </div>
+        
+        <div class="right-col">
+            <p class="about-para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis tempore doloribus consectetur perferendis ipsum quibusdam repellendus odio et nihil tempora nemo ipsa, quasi suscipit non iure deleniti quos amet excepturi. Mollitia qui sed non eveniet, vel illum quaerat quasi quis ab nulla repellat repudiandae debitis quas rem officiis enim obcaecati maxime minima, labore, consectetur aliquid nesciunt numquam. Vel voluptatum veniam animi velit, maiores, voluptate aliquam modi ut perspiciatis asperiores rem sit architecto totam! Perferendis incidunt, molestiae expedita modi itaque nemo fugit veritatis assumenda beatae, possimus nihil amet, nostrum ipsum eligendi ex. In perspiciatis sunt consequuntur eos debitis neque est a quisquam tenetur animi odit ad iste, voluptatibus molestiae harum eaque laudantium minima voluptas cum hic qui quos explicabo earum! 
+            </p>
+            <a href="#" class="btn">download CV</a>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="feature-section">
+    <!-- Skill Section Start -->
+    <h2 class="heading">language and framework I know</h2>
+    <div class="seperator"></div>
+
+    <div class="skill-container">
+        <div class="skill-card" style="--bg: #f06529">
+            <p class="skill">HTML</p>
+        </div>
+        <div class="skill-card" style="--bg: #379ad6">
+            <p class="skill">CSS</p>
+        </div>
+        <div class="skill-card" style="--bg: #cc6699">
+            <p class="skill">JavaScript</p>
+        </div>
+        <div class="skill-card" style="--bg: #f7df1e">
+            <p class="skill">ReactJS</p>
+        </div>
+        <div class="skill-card large" style="--bg: #5ed9fb">
+            <p class="skill">Python</p>
+        </div>
+        <div class="skill-card large" style="--bg: #83cd29">
+            <p class="skill">Django</p>
+        </div>
+        <div class="skill-card" style="--bg: #326690">
+            <p class="skill">Postgres SQL</p>
+        </div>
+        <div class="skill-card" style="--bg: #ffa000">
+            <p class="skill">My SQL</p>
+        </div>
+        <div class="skill-card large" style="--bg: #5ed9fb">
+            <p class="skill">Much More</p>
+        </div>
+    </div>
+</section>
+<!-- About Section End -->
+
+
+<!-- Project Section Start -->
+<section class="project" id="project-section">
+    <h2 class="heading">Project <span class="highlight">s</span></h2>
+    <p class="sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="seperator"></div>
+
+    <div class="filters">
+        <button class="filter-btn active" id="all">all</button>
+        <button class="filter-btn" id="javascript">javascript</button>
+        <button class="filter-btn " id="python">Python</button>
+        <button class="filter-btn " id="django">django</button>
+        <button class="filter-btn " id="fullstack">fullstack</button>
+    </div>
+
+
+    <div class="project-container">
+        <div class="project-card">
+            <img src="{% static 'img/visit01.jpg' %} " alt="">
+            <div class="content">
+                <h1 class="project-name">Project Name</h1>
+                <span>#django</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="{% static 'img/visit02.jpg' %} " alt="">
+            <div class="content">
+                <h1 class="project-name">Project Name</h1>
+                <span>#django</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="{% static 'img/visit03.jpg' %} " alt="">
+            <div class="content">
+                <h1 class="project-name">Project Name</h1>
+                <span>#django</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="{% static 'img/visit04.jpg' %} " alt="">
+            <div class="content">
+                <h1 class="project-name">Project Name</h1>
+                <span>#django</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="{% static 'img/visit05.jpg' %} " alt="">
+            <div class="content">
+                <h1 class="project-name">Project Name</h1>
+                <span>#django</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="{% static 'img/visit06.jpg' %} " alt="">
+            <div class="content">
+                <h1 class="project-name">Project Name</h1>
+                <span>#django</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="{% static 'img/visit07.jpg' %} " alt="">
+            <div class="content">
+                <h1 class="project-name">Project Name</h1>
+                <span>#django</span>
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <img src="{% static 'img/visit08.jpg' %} " alt="">
+            <div class="content">
+                <h1 class="project-name">Project Name</h1>
+                <span>#django</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Project Section End -->
+
+
+<!-- Contact Section Start -->
+<section class="contact" id="contact-section">
+    <h2 class="heading">Contact <span class="highlight">me</span></h2>
+    <p class="sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <div class="seperator"></div>
+
+    <div class="contact-form">
+        <div class="name">
+            <input type="text" class="first-name" required placeholder="Enter First Name">
+            <input type="text" class="last-name" required placeholder="Enter Last Name">
+        </div>
+        <input type="email" class="email" required placeholder="Enter your Email">
+        <textarea class="message" required placeholder="Message"></textarea>
+        <button href="#" class="btn contact-btn">Send</button>
+    </div>
+</section>
+
+<footer class="footer">made with love by <a href="https://www.linkedin.com/in/fazle-rabbi-24ba04190/">Fazle Rabbi</a></footer>
+
+
+</body>
+</html>
